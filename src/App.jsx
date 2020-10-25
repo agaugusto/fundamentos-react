@@ -4,6 +4,9 @@ import ComParametro from './components/ComParametro'
 import ComFilhos from './components/ComFilhos'
 import Card from './components/layout/Card'
 import Repeticao from './components/Repeticao'
+import Condicional from  './components/Condicional'
+import ConditionalComIf from './components/CondicionalComIf'
+import CondicionalComIf from './components/CondicionalComIf'
 
 export default props => (
     <div className="App">
@@ -25,6 +28,12 @@ export default props => (
         </Card>
         <Card titulo="#04 - Repetição">
             <Repeticao />
+        </Card>
+        <Card titulo="#05 - Condicional">
+            <Condicional numero={10}/>
+        </Card>
+        <Card titulo="#06 - Condicional com If">
+            <CondicionalComIf numero={11}/>
         </Card>
     </div>
 );
