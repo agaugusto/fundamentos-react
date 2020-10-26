@@ -5,7 +5,6 @@ import ComFilhos from './components/ComFilhos'
 import Card from './components/layout/Card'
 import Repeticao from './components/Repeticao'
 import Condicional from  './components/Condicional'
-import ConditionalComIf from './components/CondicionalComIf'
 import CondicionalComIf from './components/CondicionalComIf'
 
 export default props => (
