@@ -1,21 +1,21 @@
 import React from 'react'
-import Primeiro from './components/Primeiro'
-import ComParametro from './components/ComParametro'
-import ComFilhos from './components/ComFilhos'
+import Primeiro from './components/basicos/Primeiro'
+import ComParametro from './components/basicos/ComParametro'
+import ComFilhos from './components/basicos/ComFilhos'
 import Card from './components/layout/Card'
-import Repeticao from './components/Repeticao'
-import Condicional from  './components/Condicional'
-import CondicionalComIf from './components/CondicionalComIf'
+import Repeticao from './components/basicos/Repeticao'
+import Condicional from  './components/basicos/Condicional'
+import CondicionalComIf from './components/basicos/CondicionalComIf'
 
 export default props => (
     <div className="App">
-        <Card titulo="#01 - Primeiro Componente">
+        <Card titulo="#01 - Primeiro Componente" color="#8BAD39">
             <Primeiro />
         </Card>
-        <Card titulo="#02 - Componente com Parametro">
+        <Card titulo="#02 - Componente com Parametro" color="#260126">
             <ComParametro titulo="testando" subtitulo="continuando"></ComParametro>
         </Card>
-        <Card titulo="#03 - Componente com Filhos">
+        <Card titulo="#03 - Componente com Filhos" color="#75EB00">
             <ComFilhos>
                 <ul>
                     <li>Ana</li>
@@ -25,13 +25,13 @@ export default props => (
                 </ul>
             </ComFilhos>
         </Card>
-        <Card titulo="#04 - Repetição">
+        <Card titulo="#04 - Repetição" color="#FDF200">
             <Repeticao />
         </Card>
-        <Card titulo="#05 - Condicional">
+        <Card titulo="#05 - Condicional" color="#28ABE3">
             <Condicional numero={10}/>
         </Card>
-        <Card titulo="#06 - Condicional com If">
+        <Card titulo="#06 - Condicional com If" color="#FA6900">
             <CondicionalComIf numero={11}/>
         </Card>
     </div>
